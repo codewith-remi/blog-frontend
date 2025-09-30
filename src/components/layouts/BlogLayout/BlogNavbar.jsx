@@ -41,7 +41,7 @@ const BlogNavbar = ({ activeMenu }) => {
               )}
             </button>
             <Link to="/">
-              <img src="/logo.svg" alt="logo" className="h-[50px] md:h-[50px]" />
+              <img src="/logo.PNG" alt="logo" className="h-[50px] md:h-[50px]" />
             </Link>
           </div>
           <nav className="hidden md:flex items-center gap-10">
