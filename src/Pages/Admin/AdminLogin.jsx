@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import DashboardLayout from '../../components/layouts/DashboardLayout'
 
-import LOGO from "../../assets/logo.svg"
+// import LOGO from "../../assets/logo.svg"
 import Login from '../../components/Auth/Login'
 import SignUp from '../../components/Auth/SignUp'
 
@@ -13,7 +13,7 @@ const AdminLogin = () => {
     <>
       <div className="bg-white py-5 border-b border-gray-50">
         <div className="container mx-auto">
-          <img src={LOGO} alt="logo" className="h-[50px] pl-6" />
+          <img src="https://res.cloudinary.com/dqzvt0oro/image/upload/v1759231546/pej78fkl8rnspcg9zeht.png" alt="logo" className="h-[50px] pl-6" />
         </div>
       </div>
 
