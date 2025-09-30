@@ -1,7 +1,7 @@
 import React from 'react'
 import BlogLayout from '../../components/layouts/BlogLayout/BlogLayout'
 import { LuUsers, LuBook, LuHeart } from "react-icons/lu"
-import Logo from "../../assets/CWR2.svg"
+// import Logo from "../../assets/CWR2.svg"
 
 const AboutUs = () => {
   return (
@@ -10,7 +10,8 @@ const AboutUs = () => {
       <div className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-xl shadow-md p-6 mb-12">
         <div className="w-full md:w-1/2">
           <img 
-            src={Logo}
+            // src={Logo}
+            src="/CWR2.PNG"
             alt="About Remi Blog" 
             className="w-full h-64 object-cover rounded-lg shadow-sm"
           />
