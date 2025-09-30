@@ -24,7 +24,7 @@ const Navbar = ({activeMenu}) => {
       </button>
 
       {/* <img src={LOGO} alt="" className="h-[50px] md:h-[50px]" /> */}
-      <img src="https://res.cloudinary.com/dqzvt0oro/image/upload/v1759231546/pej78fkl8rnspcg9zeht.png" alt="Logo" className="h-[50px] md:h-[50px]" />
+      <img src="https://res.cloudinary.com/dqzvt0oro/image/upload/v1759231546/pej78fkl8rnspcg9zeht.png" alt="Logo" crossOrigin="anonymous" className="h-[50px] md:h-[50px]" />
 
 
       {openSideMenu && (
