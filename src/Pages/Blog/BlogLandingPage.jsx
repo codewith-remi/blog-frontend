@@ -12,7 +12,7 @@ import {
 import FeaturedBlogPost from './components/FeaturedBlogPost'
 import BlogPostSummaryCard from './components/BlogPostSummaryCard'
 import TrendingPostSection from './components/TrendingPostSection'
-import Logo from "../../assets/CWR2.svg"
+// import Logo from "../../assets/CWR2.svg"
 
 const BlogLandingPage = () => {
 
@@ -79,7 +79,8 @@ const BlogLandingPage = () => {
         {/* Left side: Image */}
         <div className="w-full md:w-1/2">
           <img 
-            src={Logo} 
+            // src={Logo} 
+            src="/logo.svg"
             alt="Welcome to Remi Blog" 
             className="w-full h-64 object-cover rounded-lg"
           />
