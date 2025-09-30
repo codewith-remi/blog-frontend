@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi"
 import SideMenu from "./SideMenu"
 
-import LOGO from "../../assets/logo.svg"
+// import LOGO from "../../assets/logo.svg"
 
 const Navbar = ({activeMenu}) => {
 
@@ -23,7 +23,9 @@ const Navbar = ({activeMenu}) => {
         )}
       </button>
 
-      <img src={LOGO} alt="" className="h-[50px] md:h-[50px]" />
+      {/* <img src={LOGO} alt="" className="h-[50px] md:h-[50px]" /> */}
+      <img src="/logo.svg" alt="Remi Logo" className="h-[50px]" />
+
 
       {openSideMenu && (
         <div className="fixed top-[62px] -ml-4 bg-white">
