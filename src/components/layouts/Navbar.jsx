@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi"
 import SideMenu from "./SideMenu"
 
-// import LOGO from "../../assets/logo.svg"
+import LOGO from "../../assets/logo.svg"
 
 const Navbar = ({activeMenu}) => {
 
