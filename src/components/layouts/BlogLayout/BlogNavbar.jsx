@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import { LuSearch } from "react-icons/lu"
 
 import {BLOG_NAVBAR_DATA} from "../../../utils/data" 
-import Logo from "../../../assets/logo.svg"
+// import Logo from "../../../assets/logo.svg"
 import SideMenu from '../SideMenu'
 import { UserContext } from '../../../Context/UserContext'
 import ProfileInfoCard from '../../Cards/ProfileInfoCard'
@@ -41,7 +41,7 @@ const BlogNavbar = ({ activeMenu }) => {
               )}
             </button>
             <Link to="/">
-              <img src={Logo} alt="logo" className="h-[50px] md:h-[50px]" />
+              <img src="https://res.cloudinary.com/dqzvt0oro/image/upload/v1759231546/pej78fkl8rnspcg9zeht.png" alt="logo" className="h-[50px] md:h-[50px]" />
             </Link>
           </div>
           <nav className="hidden md:flex items-center gap-10">
