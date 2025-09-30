@@ -24,7 +24,7 @@ const Navbar = ({activeMenu}) => {
       </button>
 
       {/* <img src={LOGO} alt="" className="h-[50px] md:h-[50px]" /> */}
-      <img src="/logo.svg" alt="Logo" className="h-[50px] md:h-[50px]" />
+      <img src="/logo.PNG" alt="Logo" className="h-[50px] md:h-[50px]" />
 
 
       {openSideMenu && (
