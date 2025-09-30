@@ -5,7 +5,6 @@ import axiosInstance from '../../utils/axiosInstance'
 import { API_PATHS } from '../../utils/apiPaths'
 import { UserContext } from '../../Context/UserContext'
 
-import AUTH_IMG from '../../assets/logo.svg'
 import Input from '../Inputs/Input'
 import { validateEmail } from '../../utils/helper'
 import toast from 'react-hot-toast'
