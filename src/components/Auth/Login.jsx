@@ -114,7 +114,8 @@ const Login = ({setCurrentPage}) => {
       </div>
 
       <div className="hidden md:block">
-        <img src={AUTH_IMG} alt="login" className="h-[400px]" />
+        {/* <img src={AUTH_IMG} alt="login" className="h-[400px]" /> */}
+        <img src="/logo.PNG" alt="" />
       </div>
     </div>
   )
