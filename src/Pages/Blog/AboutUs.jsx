@@ -8,12 +8,12 @@ const AboutUs = () => {
     <BlogLayout>
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-xl shadow-md p-6 mb-12">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 p-4">
           <img 
             // src={Logo}
             src="/CWR2.PNG"
             alt="About Remi Blog" 
-            className="w-full h-64 object-cover rounded-lg shadow-sm"
+            className="w-full h-64 object-cover"
           />
         </div>
         <div className="w-full md:w-1/2 flex flex-col justify-center">

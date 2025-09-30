@@ -26,7 +26,7 @@ const Navbar = ({activeMenu}) => {
 
 
       {openSideMenu && (
-        <div className="fixed top-[62px] -ml-4 bg-white">
+        <div className="fixed top-[62px] -ml-4">
           <SideMenu activeMenu={activeMenu} setOpenSideMenu={setOpenSideMenu} />
         </div>
       )}
