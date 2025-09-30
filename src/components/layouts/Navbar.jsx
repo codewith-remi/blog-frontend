@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi"
 import SideMenu from "./SideMenu"
 
-// import LOGO from "../../assets/logo.svg"
-
 const Navbar = ({activeMenu}) => {
 
   const [openSideMenu, setOpenSideMenu] = useState(false);
@@ -24,7 +22,7 @@ const Navbar = ({activeMenu}) => {
       </button>
 
       {/* <img src={LOGO} alt="" className="h-[50px] md:h-[50px]" /> */}
-      <img src="/logo.PNG" alt="Logo" className="h-[50px] md:h-[50px]" />
+      <img src="https://res.cloudinary.com/dqzvt0oro/image/upload/v1759231546/pej78fkl8rnspcg9zeht.png" alt="Logo" className="h-[50px] md:h-[50px]" />
 
 
       {openSideMenu && (
