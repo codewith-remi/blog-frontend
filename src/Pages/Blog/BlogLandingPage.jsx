@@ -81,7 +81,7 @@ const BlogLandingPage = () => {
           <img 
             // src={Logo} 
             src="/CWR2.PNG"
-            alt="Welcome to Remi Blog" 
+            alt="Welcome to RemiBlog" 
             className="w-full h-64 object-cover rounded-lg"
           />
         </div>
