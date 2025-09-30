@@ -141,7 +141,7 @@ const ContactUs = () => {
 
 
         {/* Right: Quick Contact */}
-              <div className="md:w-1/3 flex flex-col gap-4 p-6 rounded-xl shadow-md bg-white">
+        <div className="md:w-1/3 flex flex-col gap-4 p-6 rounded-xl shadow-md bg-white">
         {/* Quick Contact Header */}
         <div className="flex items-center gap-3 mb-4">
           <LuMessageSquare className="text-2xl text-blue-600" />
@@ -156,7 +156,7 @@ const ContactUs = () => {
             <p className="text-gray-600">Send us an email anytime</p>
             <a
               href="mailto:codewithremi40@gmail.com"
-              className="text-sky-500 font-medium hover:underline"
+              className="text-sky-500 font-medium hover:underline truncate block md:max-w-[180px]"
             >
               codewithremi40@gmail.com
             </a>
@@ -194,7 +194,7 @@ const ContactUs = () => {
             </a>
           </div>
         </div>
-      </div>
+        </div>
 
       </div>
 
