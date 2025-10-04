@@ -26,6 +26,12 @@ export const SIDE_MENU_DATA = [
     icon: LuMessageSquareQuote,
     path: "/admin/comments",
   },
+  {
+    id: "04",
+    label: "Go To Blog",
+    icon: LuMessageSquareQuote,
+    path: "/",
+  },
 ]
 
 export const BLOG_NAVBAR_DATA = [
