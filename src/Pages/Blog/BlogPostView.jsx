@@ -186,11 +186,20 @@ const BlogPostView = () => {
                 </button>
               </div>
 
-              <img 
+              {/* <img 
                 src={blogPostData.coverImageUrl || ""} 
                 alt={blogPostData.title} 
                 className="w-full h-96 object-cover mb-6 rounded-lg" 
+              /> */}
+
+            {blogPostData.coverImageUrl && (
+              <img 
+                src={blogPostData.coverImageUrl} 
+                alt={blogPostData.title} 
+                className="w-full h-96 object-cover mb-6 rounded-lg" 
               />
+            )}
+
 
               <div>
                 <MarkdownContent

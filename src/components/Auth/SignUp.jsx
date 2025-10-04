@@ -56,11 +56,6 @@ const SignUp = ({setCurrentPage}) => {
 
       // Upload image if present
 
-      // if(profilePic){
-      //   const imgUploadRes = await uploadImage(profilePic);
-      //   profileImageUrl = imgUploadRes.imageUrl || "";
-      // }
-
       if(profilePic){
         profileImageUrl = await uploadImage(profilePic); 
         console.log("Uploaded Image URL:", profileImageUrl); // Devrait afficher l'URL Cloudinary
