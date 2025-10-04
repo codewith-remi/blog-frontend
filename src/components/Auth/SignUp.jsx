@@ -10,6 +10,7 @@ import { validateEmail } from '../../utils/helper'
 import ProfilePhotoSelector from '../Inputs/ProfilePhotoSelector'
 import uploadImage from '../../utils/uploadImage'
 import toast from 'react-hot-toast'
+import { LuLoaderCircle } from 'react-icons/lu'
 
 const SignUp = ({setCurrentPage}) => {
 
@@ -20,6 +21,7 @@ const SignUp = ({setCurrentPage}) => {
   const [adminAccessToken, setAdminAccessToken] = useState("");
 
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const { updateUser, setOpenAuthForm } = useContext(UserContext);
   const navigate = useNavigate();
@@ -33,21 +35,22 @@ const SignUp = ({setCurrentPage}) => {
 
     if(!fullName){
       // setError("Please enter full name");
-      toast.success("Please enter full name")
+      toast.error("Please enter full name")
       return;
     }
 
     if(!validateEmail(email)){
       // setError("Please enter a valid email address");
-      toast.success("Please enter a valid email address")
+      toast.error("Please enter a valid email address")
       return;
     }
 
     if(!password){
       // setError("Please enter the password");
-      toast.success("Please enter the password")
+      toast.error("Please enter the password")
     }
 
+    setLoading(true)
     setError("");
 
     //SignUp API Call
@@ -93,11 +96,15 @@ const SignUp = ({setCurrentPage}) => {
     }catch(error){
       
       if(error.response && error.response.data.message){
-        setError(error.response.data.message)
+        // setError(error.response.data.message)
+        toast.error(error.response.data.message)
       }else{
-        setError("Something went wrong. Please try again")
+        // setError("Something went wrong. Please try again")
+        toast.error("Something went wrong. Please try again")
         
       }
+    }finally{
+      setLoading(false)
     }
   }
   
@@ -134,7 +141,7 @@ const SignUp = ({setCurrentPage}) => {
               value={password}
               onChange={({ target }) => setPassword(target.value)}
               label="Password"
-              placeholder="Min 8 Characters"
+              placeholder="Enter your Password"
               type="password"
             />
             <Input 
@@ -148,7 +155,13 @@ const SignUp = ({setCurrentPage}) => {
           
           {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
 
-          <button type="submit" className="btn-primary">SIGN UP</button>
+          <button type="submit" className="btn-primary">
+            {loading ? (
+                <LuLoaderCircle className="animate-spin text-[25px]" />
+              ) : (
+                'Sign Up'
+            )}{" "}
+          </button>
 
           <p className="text-[13px] text-slate-800 mt-3">
             Already have an Account?{" "}

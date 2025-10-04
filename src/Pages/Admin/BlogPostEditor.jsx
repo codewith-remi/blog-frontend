@@ -138,27 +138,27 @@ const BlogPostEditor = ({ isEdit }) => {
       }
 
       let response;
-if (isEdit) {
-  // 🔧 Pour la modification, on garde JSON
-  response = await axiosInstance.put(API_PATHS.POSTS.UPDATE(postData.id), reqPayload);
-} else {
-  // 🔧 Pour la création, on envoie un FormData avec fichier
-  const formData = new FormData();
-  formData.append("title", postData.title);
-  formData.append("content", postData.content);
-  formData.append("tags", JSON.stringify(postData.tags));
-  formData.append("isDraft", isDraft ? "true" : "false");
-  formData.append("generatedByAI", "true");
+      if (isEdit) {
+        // 🔧 Pour la modification, on garde JSON
+        response = await axiosInstance.put(API_PATHS.POSTS.UPDATE(postData.id), reqPayload);
+      } else {
+        // 🔧 Pour la création, on envoie un FormData avec fichier
+        const formData = new FormData();
+        formData.append("title", postData.title);
+        formData.append("content", postData.content);
+        formData.append("tags", JSON.stringify(postData.tags));
+        formData.append("isDraft", isDraft ? "true" : "false");
+        formData.append("generatedByAI", "true");
 
-  // si un fichier image est sélectionné, on l’ajoute
-  if (postData.coverImageUrl instanceof File) {
-    formData.append("coverImage", postData.coverImageUrl); // 👈 nom identique à upload.single("coverImage")
-  }
+        // si un fichier image est sélectionné, on l’ajoute
+        if (postData.coverImageUrl instanceof File) {
+          formData.append("coverImage", postData.coverImageUrl); // 👈 nom identique à upload.single("coverImage")
+        }
 
-  response = await axiosInstance.post(API_PATHS.POSTS.CREATE, formData, {
-    headers: { "Content-Type": "multipart/form-data" },
-  });
-}
+        response = await axiosInstance.post(API_PATHS.POSTS.CREATE, formData, {
+          headers: { "Content-Type": "multipart/form-data" },
+        });
+      }
 
 
       if(response.data){
