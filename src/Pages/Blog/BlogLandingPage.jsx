@@ -125,7 +125,7 @@ const BlogLandingPage = () => {
                   : "-"
               }
               authorName={blogPostList[0].author?.name || "Unknown"}
-              authProfileImg={blogPostList[0].author?.profileImageUrl || <CharAvatar />}
+              authProfileImg={blogPostList[0].author?.profileImageUrl || ""}
               onClick={() => handleClick(blogPostList[0])}
             />
           )}
@@ -147,7 +147,7 @@ const BlogLandingPage = () => {
                         : "-"
                     }
                     authorName={item.author?.name || "Unknown"}
-                    authProfileImg={item.author?.profileImageUrl || <CharAvatar />}
+                    authProfileImg={item.author?.profileImageUrl || ""}
                     onClick={() => handleClick(item)}
                   
                   />
