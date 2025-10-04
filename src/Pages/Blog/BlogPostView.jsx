@@ -167,7 +167,7 @@ const BlogPostView = () => {
                   {blogPostData.tags.slice(0, 3).map((tag, index) => (
                     <button 
                       key={index}
-                      className="bg-sky-200/50 text-sky-800/80 text-xs font-medium px-3 py-0.5 rounded-full text-nowrap cursor-pointer"
+                      className="bg-sky-200/50 text-sky-800/80 text-xs font-medium px-3 py-0.5 rounded-full text-nowrap cursor-pointer truncate max-w-60"
                       onClick={(e) => {
                         e.stopPropagation();
                         navigate(`/tag/${tag}`)
@@ -278,7 +278,7 @@ const BlogPostView = () => {
 
             </div>
 
-            <div className="col-span-12 md:col-span-4">
+            <div className="col-span-12 md:col-span-4 ">
               <TrendingPostSection />
             </div>
           </div>

@@ -52,7 +52,7 @@ const BlogPostSummaryCard = ({
             className="" 
           /> */}
 
-          {authProfileImg ? (
+          {/* {authProfileImg ? (
             <img
               src={authProfileImg}
               alt={authorName}
@@ -65,7 +65,33 @@ const BlogPostSummaryCard = ({
               height="h-10"
               style="text-xl"
             />
-          )}
+          )} */}
+
+
+            {authProfileImg && authProfileImg !== 'null' && authProfileImg !== 'undefined' && authProfileImg.trim() !== '' ? (
+              <img
+                src={authProfileImg}
+                alt={authorName}
+                className="w-10 h-10 bg-slate-400 rounded-full object-cover"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.insertAdjacentHTML(
+                    'afterend',
+                    `<div class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-400 text-white font-semibold text-xl">
+                      ${authorName ? authorName[0].toUpperCase() : '?'}
+                    </div>`
+                  );
+                }}
+              />
+            ) : (
+              <CharAvatar
+                fullName={authorName}
+                width="w-10"
+                height="h-10"
+                style="text-xl"
+              />
+            )}
+
 
           <div>
             <p className="text-gray-600 text-sm">{authorName}</p>

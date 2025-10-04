@@ -12,6 +12,7 @@ import {
 import FeaturedBlogPost from './components/FeaturedBlogPost'
 import BlogPostSummaryCard from './components/BlogPostSummaryCard'
 import TrendingPostSection from './components/TrendingPostSection'
+import CharAvatar from '../../components/Cards/CharAvatar'
 // import Logo from "../../assets/CWR2.svg"
 
 const BlogLandingPage = () => {
@@ -113,20 +114,6 @@ const BlogLandingPage = () => {
         <div className="col-span-12 md:col-span-9">
 
           {blogPostList.length > 0 && (
-            // <FeaturedBlogPost 
-            //   title={blogPostList[0].title}
-            //   coverImageUrl={blogPostList[0].coverImageUrl}
-            //   description={blogPostList[0].content}
-            //   tags={blogPostList[0].tags}
-            //   updatedOn={
-            //     blogPostList[0].updatedAt
-            //       ? moment(blogPostList[0].updatedAt).format("Do MMM YYYY")
-            //       : "-"
-            //   }
-            //   authorName={blogPostList[0].author.name}
-            //   authProfileImg={blogPostList[0].author.profileImageUrl}
-            //   onClick={() => handleClick(blogPostList[0])}
-            // />
             <FeaturedBlogPost 
               title={blogPostList[0].title}
               coverImageUrl={blogPostList[0].coverImageUrl}
@@ -138,7 +125,7 @@ const BlogLandingPage = () => {
                   : "-"
               }
               authorName={blogPostList[0].author?.name || "Unknown"}
-              authProfileImg={blogPostList[0].author?.profileImageUrl || "/default-profile.png"}
+              authProfileImg={blogPostList[0].author?.profileImageUrl || <CharAvatar />}
               onClick={() => handleClick(blogPostList[0])}
             />
           )}
@@ -149,21 +136,6 @@ const BlogLandingPage = () => {
                 .slice(1)
                 .map((item) => (
                   <BlogPostSummaryCard
-                    // key={item._id}
-                    // title={item.title}
-                    // coverImageUrl={item.coverImageUrl}
-                    // description={item.content}
-                    // tags={item.tags}
-                    // updatedOn={
-                    //   item.updatedAt
-                    //     ? moment(item.updatedAt).format("Do MMM YYYY")
-                    //     : "-"
-                    // }
-                    // authorName={item.author.name}
-                    // authProfileImg={item.author.profileImageUrl}
-                    // onClick={() => handleClick(item)}
-
-                    
                     key={item._id}
                     title={item.title}
                     coverImageUrl={item.coverImageUrl}
@@ -175,7 +147,7 @@ const BlogLandingPage = () => {
                         : "-"
                     }
                     authorName={item.author?.name || "Unknown"}
-                    authProfileImg={item.author?.profileImageUrl || "/default-profile.png"}
+                    authProfileImg={item.author?.profileImageUrl || <CharAvatar />}
                     onClick={() => handleClick(item)}
                   
                   />
