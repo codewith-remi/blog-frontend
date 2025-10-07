@@ -57,7 +57,9 @@ export default TrendingPostSection
 const PostCard =({ title, coverImageUrl, tags, onClick })=>{
   return (
     <div className="cursor-pointer mb-3" onClick={onClick}>
-      <h6 className="text-[10px] font-semibold text-sky-500">{tags[0]?.toUpperCase() || "BLOG"}</h6>
+      <h6 className="text-[10px] font-semibold text-sky-500
+          inline-block max-w-[350px] overflow-hidden text-ellipsis whitespace-nowrap
+          sm:max-w-none ">{tags[0]?.toUpperCase() || "BLOG"}</h6>
 
       <div className="flex items-start gap-4 mt-2">
         <img 
