@@ -14,21 +14,6 @@ const MarkdownContent = ({ content }) => {
         <ReactMarkdown 
           remarkPlugins={[remarkGfm]}
           components={{
-            // code({ node, className, children, ...props }){
-            //   const match = /language-(\w+)/.exec(className || '')
-            //   const language = match ? match[1] : ''
-
-            //   const isInline = !className
-
-            //   return !isInline ? (
-            //     <CodeBlock 
-            //       code={String(children).replace(/\n$/, '')}
-            //       language={language}
-            //     />
-            //   ) : (
-            //     <code className="px-1 py-0.5 bg-sky-50 rounded text-sm" {...props}>{children}</code>
-            //   )
-            // },
             
             code({ node, inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || '')
