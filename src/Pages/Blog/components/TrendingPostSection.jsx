@@ -58,8 +58,8 @@ const PostCard =({ title, coverImageUrl, tags, onClick })=>{
   return (
     <div className="cursor-pointer mb-3" onClick={onClick}>
       <h6 className="text-[10px] font-semibold text-sky-500
-          inline-block max-w-[320px] overflow-hidden text-ellipsis whitespace-nowrap
-          sm:max-w-none ">{tags[0]?.toUpperCase() || "BLOG"}</h6>
+  inline-block overflow-hidden text-ellipsis whitespace-nowrap
+ max-w-[310px] sm:max-w-[780px] md:max-w-[160px] lg:max-w-[210px]">{tags[0]?.toUpperCase() || "BLOG"}</h6>
 
       <div className="flex items-start gap-4 mt-2">
         <img 

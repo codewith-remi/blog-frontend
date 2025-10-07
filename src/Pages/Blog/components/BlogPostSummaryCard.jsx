@@ -52,21 +52,6 @@ const BlogPostSummaryCard = ({
             className="" 
           /> */}
 
-          {/* {authProfileImg ? (
-            <img
-              src={authProfileImg}
-              alt={authorName}
-              className="w-10 h-10 bg-slate-400 rounded-full"
-            />
-          ) : (
-            <CharAvatar
-              fullName={authorName}
-              width="w-10"
-              height="h-10"
-              style="text-xl"
-            />
-          )} */}
-
 
             {authProfileImg && authProfileImg !== 'null' && authProfileImg !== 'undefined' && authProfileImg.trim() !== '' ? (
               <img
