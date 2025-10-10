@@ -157,7 +157,7 @@
             <meta property="og:type" content="article" />
 
             <div className="grid grid-cols-12 gap-8 relative ">
-              <div className="col-span-12 md:col-span-8 relative mx-auto w-full max-w-3xl bg-red-700">
+              <div className="col-span-12 md:col-span-8 relative mx-auto w-full max-w-3xl">
                 <h1 className="text-lg md:text-2xl font-bold mb-2 line-clamp-3">{blogPostData.title}</h1>
               
                 <div className="flex items-center gap-1 flex-wrap mt-3 mb-5">
