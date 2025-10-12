@@ -21,6 +21,7 @@
   import CommentInfoCard from './components/CommentInfoCard'
   import Drawer from '../../components/Drawer'
   import LikeCommentButton from './components/LikeCommentButton'
+import BlogFooter from '../../components/layouts/BlogLayout/BlogFooter'
 
   const BlogPostView = () => {
 
