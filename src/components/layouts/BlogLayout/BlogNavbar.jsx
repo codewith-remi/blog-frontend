@@ -52,12 +52,6 @@ const BlogNavbar = ({ activeMenu }) => {
                 <Link key={item.id} to={item.path}>
                   <li className="text-[15px] text-black font-medium list-none relative group cursor-pointer">
                     {item.label}
-                    {/* <span 
-                      className={`absolute inset-x-0 bottom-0 h-[2px] bg-sky-500 transition-all duration-300 origin-left ${
-                        index == 0 ? "scale-x-100" : "scale-x-0"
-                      } group-hover:scale-x-100`}  
-                    >  
-                    </span> */}
                     <span
                       className={`absolute inset-x-0 bottom-0 h-[2px] bg-sky-500 transition-all duration-300 origin-left 
                         ${activeMenu === item.path ? "scale-x-100" : "scale-x-0"} 

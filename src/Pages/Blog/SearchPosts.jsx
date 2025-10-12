@@ -5,6 +5,7 @@ import { API_PATHS } from '../../utils/apiPaths'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import BlogPostSummaryCard from './components/BlogPostSummaryCard'
 import moment from 'moment'
+import BlogFooter from '../../components/layouts/BlogLayout/BlogFooter'
 
 const SearchPosts = () => {
   
@@ -70,6 +71,8 @@ const SearchPosts = () => {
           }
         </div>
       </div>
+
+      <BlogFooter />
     </BlogLayout>
   )
 }

@@ -299,6 +299,8 @@
             </Drawer>
           </>
         )}
+
+        <BlogFooter />
       </BlogLayout>
     )
   }

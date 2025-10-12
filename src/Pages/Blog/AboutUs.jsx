@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogLayout from '../../components/layouts/BlogLayout/BlogLayout'
 import { LuUsers, LuBook, LuHeart } from "react-icons/lu"
+import BlogFooter from '../../components/layouts/BlogLayout/BlogFooter'
 // import Logo from "../../assets/CWR2.svg"
 
 const AboutUs = () => {
@@ -64,6 +65,8 @@ const AboutUs = () => {
           Subscribe Now
         </button>
       </div>
+
+      <BlogFooter />
     </BlogLayout>
   )
 }

@@ -13,6 +13,7 @@ import {
   LuLinkedin,
 } from "react-icons/lu";
 import { SiTiktok } from "react-icons/si";
+import BlogFooter from "../../components/layouts/BlogLayout/BlogFooter";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -289,6 +290,8 @@ const ContactUs = () => {
           </button>
         </div>
       </div>
+
+      <BlogFooter />
     </BlogLayout>
   );
 };

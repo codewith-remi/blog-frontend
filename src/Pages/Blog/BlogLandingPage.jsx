@@ -13,6 +13,7 @@ import FeaturedBlogPost from './components/FeaturedBlogPost'
 import BlogPostSummaryCard from './components/BlogPostSummaryCard'
 import TrendingPostSection from './components/TrendingPostSection'
 import CharAvatar from '../../components/Cards/CharAvatar'
+import BlogFooter from '../../components/layouts/BlogLayout/BlogFooter'
 // import Logo from "../../assets/CWR2.svg"
 
 const BlogLandingPage = () => {
@@ -179,6 +180,8 @@ const BlogLandingPage = () => {
           <TrendingPostSection />
         </div>
       </div>
+
+      <BlogFooter />
     </BlogLayout>
   )
 }

@@ -6,6 +6,7 @@ import { API_PATHS } from '../../utils/apiPaths'
 import BlogPostSummaryCard from "./components/BlogPostSummaryCard"
 import moment from 'moment'
 import TrendingPostSection from './components/TrendingPostSection'
+import BlogFooter from '../../components/layouts/BlogLayout/BlogFooter'
 
 const PostByTags = () => {
 
@@ -74,6 +75,8 @@ const PostByTags = () => {
           </div>
         </div>
       </div>
+
+      <BlogFooter />
     </BlogLayout>
   )
 }
