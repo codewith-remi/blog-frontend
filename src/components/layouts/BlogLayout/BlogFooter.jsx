@@ -11,9 +11,9 @@ const BlogFooter = ({ activeMenu }) => {
           <h1 className="text-2xl font-semibold">REMIBLOG</h1>
         </div>
         <p className="font-light">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Perspiciatis ex voluptatum nemo optio nostrum voluptas exercitationem assumenda. 
-          Numquam delectus maiores quasi veritatis placeat in laudantium cupiditate quo, iste temporibus fugiat.
+            Explore insightful articles, trending topics and valuable knowledge 
+            shared by our community. At <strong>Remi Blog</strong>, learning meets 
+            inspiration, join us on this journey!
         </p>
         <div className="mt-[10px] mb-[20px] flex gap-[10px]">
           <img src="/facebook.png" alt='' width={18} height={18}/>
