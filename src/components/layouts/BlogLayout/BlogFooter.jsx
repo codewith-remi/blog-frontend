@@ -6,9 +6,9 @@ const BlogFooter = ({ activeMenu }) => {
   return (
     <div className="mt-[50px] py-5 flex items-center justify-between flex-wrap md:flex-nowrap">
       <div className="flex flex-col gap-[14px] flex-1">
-        <div className="flex items-center gap-[10px]">
+        <div className="flex items-center gap-[2px]">
           <img src="https://res.cloudinary.com/dqzvt0oro/image/upload/v1759231546/pej78fkl8rnspcg9zeht.png" alt='' className="h-[50px] md:h-[50px]"/>
-          <h1 className="text-2xl font-semibold">REMIBLOG</h1>
+          <h1 className="text-lg font-semibold">REMIBLOG</h1>
         </div>
         <p className="font-light">
             Explore insightful articles, trending topics and valuable knowledge 
@@ -53,7 +53,7 @@ const BlogFooter = ({ activeMenu }) => {
           <span className="font-bold">Tags</span>
           <Link href="/">Programming</Link>
           <Link href="/">Security</Link>
-          <Link href="/">Networking</Link>
+          {/* <Link href="/">Networking</Link> */}
           <Link href="/">Graphics</Link>
         </div>
         <div className="flex flex-col gap-[10px] font-light">

@@ -13,10 +13,10 @@ const FeaturedBlogPost = ({
 }) => {
   return (
     <div 
-      className="grid grid-cols-12 bg-white shadow-lg shadow-gray-100 rounded-xl overflow-hidden cursor-pointer"
+      className="flex flex-col md:flex-row bg-white shadow-lg shadow-gray-100 rounded-xl overflow-hidden cursor-pointer"
       onClick={onClick}
     >
-      <div className="col-span-6">
+      <div className="w-full md:w-1/2">
         <img 
           src={coverImageUrl} 
           alt={title}
@@ -24,7 +24,7 @@ const FeaturedBlogPost = ({
         />
       </div>
 
-      <div className="col-span-6">
+      <div className="w-full md:w-1/2">
         <div className="p-6">
           <h2 className="text-lg md:text-2xl font-bold mb-2 line-clamp-3">{title}</h2>
           <p className="text-gray-700 text-[13px] mb-4 line-clamp-3">{description}</p>
@@ -41,11 +41,6 @@ const FeaturedBlogPost = ({
           </div>
 
           <div className="flex items-center gap-2">
-            {/* <img 
-              src={authProfileImg}
-              alt={authorName}
-              className="w-8 h-8 rounded-full mr-2" 
-            /> */}
 
             {authProfileImg ? (
               <img

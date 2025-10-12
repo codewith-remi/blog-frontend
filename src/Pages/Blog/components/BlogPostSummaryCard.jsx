@@ -46,12 +46,6 @@ const BlogPostSummaryCard = ({
         </div>
 
         <div className="flex items-center gap-2">
-          {/* <img 
-            src={authProfileImg}
-            alt={authorName} 
-            className="" 
-          /> */}
-
 
             {authProfileImg && authProfileImg !== 'null' && authProfileImg !== 'undefined' && authProfileImg.trim() !== '' ? (
               <img
